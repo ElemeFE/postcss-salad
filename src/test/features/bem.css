@@ -1,0 +1,29 @@
+@utility utilityName {
+  color: green;
+}
+
+@utility utilityName small {
+  color: blue;
+}
+
+@component ComponentName {
+  color: cyan;
+
+  @modifier modifierName {
+    color: yellow;
+  }
+
+  @descendent descendentName {
+    color: navy;
+  }
+
+  @when stateName {
+    color: crimson;
+  }
+}
+
+@component-namespace nmsp {
+  @component ComponentName {
+    color: red;
+  }
+}

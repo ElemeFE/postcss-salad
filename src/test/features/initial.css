@@ -1,0 +1,10 @@
+a {
+  animation: initial;
+  background: initial;
+  white-space: initial;
+}
+p {
+  background: url(/img1.png),
+              url(/img2.png);
+  background-repeat: initial no-repeat
+}

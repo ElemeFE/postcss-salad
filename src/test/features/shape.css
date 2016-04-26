@@ -1,0 +1,33 @@
+.rect-a {
+  rect: 30px 50px #ff0;
+}
+.rect-b {
+  rect: 30px * #ff0;
+}
+.rect-c {
+  rect: * 50px #ff0;
+}
+.rect-d {
+  rect: * * #ff0;
+}
+.rect-e {
+  rect: 30px 50px *;
+}
+.circle-a {
+  circle: 50px #ff0;
+}
+.circle-b {
+  circle: 50px *;
+}
+.triangle-a {
+  triangle: 5px top #ff0;
+}
+.triangle-b {
+  triangle: 5px bottom #ff0;
+}
+.triangle-c {
+  triangle: 5px left #ff0;
+}
+.triangle-d {
+  triangle: 5px right #ff0;
+}
