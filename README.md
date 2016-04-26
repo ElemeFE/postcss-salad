@@ -310,10 +310,9 @@ Postcss-salad powered by the following plugins (in this order):
 - [postcss-inline-svg]: reference an SVG file and control its attributes with CSS syntax.
 - [postcss-short-font-size]: extends the font-size property so that line-height may be set by the second value.
 - [postcss-short-spacing]: lets you write shorthand margin and padding properties while omitting edges in CSS.
-- [postcss-color-function]: W3C color methods
 - [postcss-short-size]: Write shorthand size properties in CSS
 - [postcss-short-position]: Define edges inside the position property in CSS
-- [postcss-salad]: draw basic salad with specified syntax in css rule
+- [postcss-shape]: draw basic shape with specified syntax in css rule
 - [node-pixrem]: generates pixel fallbacks for rem units.
 - [autoprefixer]: parse CSS and add vendor prefixes to CSS rules using values from Can I Use
 
@@ -326,7 +325,7 @@ Postcss-salad powered by the following plugins (in this order):
 [postcss-inline-svg]: https://github.com/TrySound/postcss-inline-svg
 [postcss-short-font-size]: https://github.com/jonathantneal/postcss-short-font-size
 [postcss-short-spacing]: https://github.com/jonathantneal/postcss-short-spacing
-[postcss-color-function]: https://github.com/postcss/postcss-color-function
+[postcss-shape]: https://github.com/baiyaaaaa/postcss-shape
 [postcss-short-size]: https://github.com/jonathantneal/postcss-short-size
 [postcss-short-position]: https://github.com/jonathantneal/postcss-short-position
 [node-pixrem]: https://github.com/robwierzbowski/node-pixrem

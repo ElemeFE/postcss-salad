@@ -4,7 +4,7 @@
   "description": "沙拉是一个能够帮助你更加写出更加简洁、优雅的CSS的样式解决方案。",
   "main": "lib/index.js",
   "scripts": {
-    "test": "npm run tape",
+    "test": "npm run babelify && npm run tape",
     "tape": "tape lib/test/index.js | tap-spec",
     "babelify": "babel src --out-dir lib",
     "prepublish": "npm run babelify"
