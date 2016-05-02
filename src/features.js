@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 export default {
   /**
    * REMINDER:
@@ -6,6 +5,9 @@ export default {
    * order is important
    * ******************
    */
+
+  // https://npmjs.com/package/postcss-neat
+  neat: (options) => require("postcss-neat")(options),
 
   // https://npmjs.com/package/postcss-bem
   bem: (options) => require("postcss-bem")(options),
@@ -22,17 +24,8 @@ export default {
   // https://npmjs.com/package/postcss-inline-svg
   inlineSvg: (options) => require("postcss-inline-svg")(options),
 
-  // https://npmjs.com/package/postcss-short-font-size
-  shortFontSize: (options) => require("postcss-short-font-size")(options),
-
-  // https://npmjs.com/package/postcss-short-spacing
-  shortSpacing: (options) => require("postcss-short-spacing")(options),
-
-  // https://npmjs.com/package/postcss-short-size
-  shortSize: (options) => require("postcss-short-size")(options),
-
-  // https://npmjs.com/package/postcss-short-position
-  shortPosition: (options) => require("postcss-short-position")(options),
+  // https://npmjs.com/package/postcss-short
+  short: (options) => require("postcss-short")(options),
 
   // https://npmjs.com/package/postcss-shape
   shape: (options) => require("postcss-shape")(options),

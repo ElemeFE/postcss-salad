@@ -1,0 +1,6 @@
+.cnt {
+  @neat-outer-container;
+}
+.col2 {
+  @neat-span-columns 1;
+}
