@@ -1,0 +1,15 @@
+p {
+  font-size: 125%;
+  line-height: 1.5;
+  top: 1em;
+  right: 2em;
+  bottom: 3em;
+  left: 4em;
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
