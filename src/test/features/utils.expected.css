@@ -1,0 +1,46 @@
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ellipsis2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.clearfix {
+}
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: ;
+}
+.clearfix:after {
+  clear: both;
+}
+.irt {
+  font: 0/0 none;
+  text-shadow: none;
+  color: transparent;
+}
+.usn {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+.disabled {
+  background-color: #ccc;
+  border-color: #f00;
+  color: #333;
+  cursor: default;
+  pointer-events: none;
+}
+.vam-box {
+}
+.vam-box:after {
+  display: inline-block;
+  content: ;
+  height: 100%;
+  vertical-align: middle;
+}

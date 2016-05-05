@@ -1,0 +1,22 @@
+.cnt {
+  max-width: 64em;
+  margin-left: auto;
+  margin-right: auto;
+  *zoom: 1;
+}
+.cnt:before, .cnt:after {
+  content: " ";
+  display: table;
+}
+.cnt:after {
+  clear: both;
+}
+.col2 {
+  display: block;
+  float: left;
+  margin-right: 2.35765160%;
+  width: 6.17215270%;
+}
+.col2:last-child {
+  margin-right: 0;
+}

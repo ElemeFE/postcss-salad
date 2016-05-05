@@ -1,0 +1,21 @@
+.ellipsis {
+  @utils-ellipsis;
+}
+.ellipsis2 {
+  @utils-ellipsis 3;
+}
+.clearfix {
+  @utils-clearfix;
+}
+.irt {
+  @utils-irt;
+}
+.usn {
+  @utils-user-select none;
+}
+.disabled {
+  @utils-disabled #ccc #f00 #333;
+}
+.vam-box {
+  @utils-vertical-center;
+}

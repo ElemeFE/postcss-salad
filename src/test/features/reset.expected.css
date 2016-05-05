@@ -1,0 +1,27 @@
+.table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  vertical-align: middle;
+  color: #fff;
+}
+
+td, th {
+  background-color: #fff;
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+}
+
+.regular-font {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit; 
+}

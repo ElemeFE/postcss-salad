@@ -1,0 +1,17 @@
+.table {
+  @reset-nested tabel;
+  color: #fff;
+}
+
+td, th {
+  background-color: #fff;
+  @reset-nested tabel-cell;
+}
+
+ul, ol {
+  @reset-nested list; 
+}
+
+.regular-font {
+  @reset-nested font; 
+}

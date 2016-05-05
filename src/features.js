@@ -6,6 +6,12 @@ export default {
    * ******************
    */
 
+  // https://npmjs.com/package/postcss-utils
+  utils: (options) => require("postcss-utils")(options),
+
+  // https://npmjs.com/package/postcss-css-reset
+  reset: (options) => require("postcss-css-reset")(options),
+
   // https://npmjs.com/package/postcss-neat
   neat: (options) => require("postcss-neat")(options),
 
