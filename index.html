@@ -5,36 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Postcss-salad by ElemeFE</title>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <link rel="stylesheet" href="asserts/stylesheets/docs.css">
+    <link rel="stylesheet" href="asserts/stylesheets/github-light.css">
     <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Postcss-salad</h1>
-        <p>沙拉是一个能够帮助你写出更加简洁、优雅的CSS的样式解决方案</p>
-
-        <p class="view"><a href="https://github.com/ElemeFE/postcss-salad">View the Project on GitHub <small>ElemeFE/postcss-salad</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/ElemeFE/postcss-salad/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/ElemeFE/postcss-salad/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/ElemeFE/postcss-salad">View On <strong>GitHub</strong></a></li>
+    <div class="main-wrapper">
+      <aside class="docs-navbar">
+        <ul class="nav">
+          <li class="nav-item"><a href="">Overview</a></li>
+          <li class="nav-item expanded active">
+            <a href="">Reset and Normalize</a>
+            <ul class="subnav">
+              <li class="nav-item active"><a href="">reset-global</a></li>
+              <li class="nav-item"><a href="">reset-nested</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="">Latest CSS Syntax</a></li>
+          <li class="nav-item"><a href="">Short Property</a></li>
+          <li class="nav-item"><a href="">Grid</a></li>
+          <li class="nav-item"><a href="">Basic Shape</a></li>
+          <li class="nav-item"><a href="">Utils</a></li>
+          <li class="nav-item"><a href="">Inline Svg</a></li>
+          <li class="nav-item"><a href="">Rem to Pixel</a></li>
+          <li class="nav-item"><a href="">Sass Syntax</a></li>
         </ul>
-      </header>
-      <section>
-        
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/ElemeFE">ElemeFE</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+      </aside>
+      <main>
+        <header>
+          <h1>Salad</h1>
+        </header>
+        <section>
+          <h2 id="overview">概览</h2>
+          {% highlight css %}
+          body {
+            margin: 0;
+          }
+          {% endhighlight %}
+        </section>
+      </main>
     </div>
+    <footer>
+      <p>This project is maintained by <a href="https://github.com/ElemeFE">ElemeFE</a></p>
+      <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+    </footer>
     <script src="javascripts/scale.fix.js"></script>
   </body>
 </html>

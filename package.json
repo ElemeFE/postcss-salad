@@ -1,9 +1,12 @@
 {
   "devDependencies": {
     "gulp": "^3.9.1",
-    "postcss": "^5.0.21"
+    "gulp-postcss": "^6.1.1",
+    "postcss": "^5.0.21",
+    "postcss-css-reset": "^1.0.1",
+    "postcss-discard-comments": "^2.0.4",
+    "postcss-inline-svg": "^1.4.0",
+    "postcss-utils": "^1.0.0"
   },
-  "scripts": {
-    
-  }
+  "scripts": {}
 }
