@@ -1,4 +1,4 @@
 node_modules/
 lib/
-src/
+_site/
 npm-debug.log

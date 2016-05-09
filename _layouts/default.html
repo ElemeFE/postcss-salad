@@ -2,15 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Postcss-salad by ElemeFE</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="asserts/stylesheets/docs.css">
-    <link rel="stylesheet" href="asserts/stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+    <link rel="stylesheet" href="{{ "/css/docs.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/highlight.css" | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   </head>
   <body>
     <div class="main-wrapper">
@@ -36,15 +37,10 @@
       </aside>
       <main>
         <header>
-          <h1>Salad</h1>
+          
         </header>
         <section>
-          <h2 id="overview">概览</h2>
-          {% highlight css %}
-          body {
-            margin: 0;
-          }
-          {% endhighlight %}
+          {{ content }}
         </section>
       </main>
     </div>
@@ -52,6 +48,5 @@
       <p>This project is maintained by <a href="https://github.com/ElemeFE">ElemeFE</a></p>
       <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
     </footer>
-    <script src="javascripts/scale.fix.js"></script>
   </body>
 </html>

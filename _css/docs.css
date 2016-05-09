@@ -1,0 +1,108 @@
+@reset-global pc;
+
+$navItem-active-color: #2db7f5 !default;
+
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h1 {
+	
+}
+pre {
+	display: block;
+	padding: 9.5px;
+	margin: 0 0 10px;
+	font-size: 13px;
+	line-height: 1.42857143;
+	color: #333;
+	word-break: break-all;
+	word-wrap: break-word;
+	background-color: #f5f5f5;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+/* main-wrapper */
+.main-wrapper {
+  @neat-outer-container;
+  max-width: none;
+  padding: 30px 55px;
+  
+  & aside {
+    @neat-span-columns 3 10;
+  }
+  & main {
+    @neat-span-columns 7 10;
+  }
+}
+
+.docs-navbar {
+	/* 导航 */
+  & .nav-item a {
+		padding: 8px 15px;
+  	font-size: 14px;
+    border-left: 1px solid #ccc;
+    display: block;
+    text-decoration: none;
+    line-height: normal;
+		color: #707070;
+		position: relative;
+    
+    &:hover {
+			background: none;
+			color: #444;
+			text-decoration: underline;
+			border-color: $navItem-active-color;
+    }
+  }
+	
+	/* 导航激活 */
+	& .nav-item.active > a {
+		color: $navItem-active-color;
+		font-weight: 700;
+	}
+	
+	/* 导航展开 */
+	& .nav-item.expanded a {
+		border-color: $navItem-active-color;
+	}
+	
+	& .nav-item.expanded > a {
+		&:hover:after {
+			content: '';
+			triangle: 10px top #444;
+			position: absolute 10px 5px * *;
+		}
+	}
+	
+	/* 一级导航 */
+	& .nav > .nav-item > a:hover {
+		text-decoration: none;
+		background: url(/expand-down.svg) 110px 5px no-repeat;
+		background-size: 24px;
+	}
+	
+	/* 二级导航 */
+	& .nav-item .nav-item > a {
+		padding: 5px 25px;
+		font-size: 13px;
+		position: relative
+	}
+	& .subnav .nav-item.active a {
+		&:before {
+			content: "";
+			position: absolute;
+			height: 7px;
+			width: 7px;
+			background-color: $navItem-active-color;
+			top: 10px;
+			left: -4px;
+			border-radius: 100%;
+		}	
+	}
+}
+
+footer {
+  text-align: center;
+}

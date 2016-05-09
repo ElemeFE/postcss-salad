@@ -1,0 +1,5 @@
+@for $i from 1 to 12 {
+  .col-md-$i {
+    @neat-span-columns $(i) 12;
+  }
+}
