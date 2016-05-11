@@ -9,9 +9,9 @@
 
 ## Usage
 
-- [Node](#Node)
-- [PostCSS](#PostCSS)
-- [Gulp](#Gulp)
+- [Node](#node)
+- [PostCSS](#postcss)
+- [Gulp](#gulp)
 - [webpack](#webpack)
 
 Add [Postcss salad] to your build tool:
