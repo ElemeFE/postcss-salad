@@ -63,9 +63,13 @@ gulp.task('css', function () {
 
 ## options
 
-***you can change the plugin's behaviour by the options***
+**you can change the plugin's behaviour by the options**
 
-```
+沙拉里每一个特性都是依赖于对应的插件的，因此他们都有自己的配置。 你可以通过 features 属性类为每一个插件传入它的配置，假设某个特性传入的值为false，则该特性会被关闭:
+
+*example:*
+
+```js
 var options = {
   browser: ['ie > 8', 'last 2 version'],
   features: {
