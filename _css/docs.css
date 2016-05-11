@@ -101,6 +101,10 @@ blockquote {
 	
 	&.slide-in-left {
 		transform: translate3d(80%, 0, 0);
+		
+		& aside {
+			opacity: 1;
+		}
 	}
   
   & aside {
@@ -117,6 +121,8 @@ blockquote {
 			left: 0;
 			z-index: 10;
 			width: 80%;
+			opacity: 0;
+			transition: opacity .3s;
 		}
   }
   & main {

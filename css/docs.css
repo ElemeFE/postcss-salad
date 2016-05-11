@@ -307,11 +307,12 @@ blockquote a{ font-style:normal; }
 .main-wrapper:before, .main-wrapper:after{ content:" "; display:table; }
 .main-wrapper:after{ clear:both; }
 .main-wrapper.slide-in-left{ -webkit-transform:translate3d(80%, 0, 0); transform:translate3d(80%, 0, 0); }
+.main-wrapper.slide-in-left aside{ opacity:1; }
 .main-wrapper aside{ display:block; float:left; margin-right:2.35765160%; width:23.23176130%; padding:30px; height:100%; background-color:#4d394b; color:#fff; }
 .main-wrapper aside:last-child{ margin-right:0; }
 @media (max-width: 768px){
 
- .main-wrapper aside{ position:relative; margin-left:-80%; margin-right:0; left:0; z-index:10; width:80%; } }
+ .main-wrapper aside{ position:relative; margin-left:-80%; margin-right:0; left:0; z-index:10; width:80%; opacity:0; -webkit-transition:opacity .3s; transition:opacity .3s; } }
 .main-wrapper main{ display:block; float:left; margin-right:2.35765160%; width:74.41058710%; height:100%; overflow:auto; padding-right:180px; }
 .main-wrapper main:last-child{ margin-right:0; }
 @media (max-width: 768px){
