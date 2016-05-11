@@ -19,24 +19,24 @@
       <aside class="docs-navbar">
         <div class="aside-top">Salad</div>
         <ul class="nav">
-          <li class="nav-item {% if page.title == "Overview" %} active {% endif %}"><a href="">Overview</a></li>
+          <li class="nav-item {% if page.title == "Overview" %} active {% endif %}"><a href="{{ '/index.html' | prepend: site.baseurl }}">Overview</a></li>
           <li class="nav-item {% if page.title == "Reset and Normalize" %} active {% endif %}">
-            <a href="/reset.html">Reset and Normalize</a>
+            <a href="{{ '/reset.html' | prepend: site.baseurl}}">Reset and Normalize</a>
             <!--<ul class="subnav">
               <li class="nav-item active"><a href="/reset.html#reset-global">reset-global</a></li>
               <li class="nav-item"><a href="/reset.html#reset-nested">reset-nested</a></li>
             </ul>-->
           </li>
           <li class="nav-item {% if page.title == "Lasted CSS Syntax" %} active {% endif %}">
-            <a href="/lasted-syntax.html">Lasted CSS Syntax</a>
+            <a href="{{ '/lasted-syntax.html' | prepend: site.baseurl}}">Lasted CSS Syntax</a>
           </li>
-          <li class="nav-item {% if page.title == "Short Property" %} active {% endif %}"><a href="/short-property.html">Short Property</a></li>
-          <li class="nav-item {% if page.title == "Grid" %} active {% endif %}"><a href="/grid.html">Grid</a></li>
-          <li class="nav-item {% if page.title == "Basic Shape" %} active {% endif %}"><a href="/basic-shape.html">Basic Shape</a></li>
-          <li class="nav-item {% if page.title == "Utils" %} active {% endif %}"><a href="/utils.html">Utils</a></li>
-          <li class="nav-item {% if page.title == "Inline Svg" %} active {% endif %}"><a href="/inline-svg.html">Inline Svg</a></li>
-          <li class="nav-item {% if page.title == "Rem to Pixel" %} active {% endif %}"><a href="/Rem-to-Pixel.html">Rem to Pixel</a></li>
-          <li class="nav-item {% if page.title == "Sass Syntax" %} active {% endif %}"><a href="/sass-syntax.html">Sass Syntax</a></li>
+          <li class="nav-item {% if page.title == "Short Property" %} active {% endif %}"><a href="{{ '/short-property.html' | prepend: site.baseurl}}">Short Property</a></li>
+          <li class="nav-item {% if page.title == "Grid" %} active {% endif %}"><a href="{{ '/grid.html' | prepend: site.baseurl}}">Grid</a></li>
+          <li class="nav-item {% if page.title == "Basic Shape" %} active {% endif %}"><a href="{{ '/basic-shape.html' | prepend: site.baseurl}}">Basic Shape</a></li>
+          <li class="nav-item {% if page.title == "Utils" %} active {% endif %}"><a href="{{ '/utils.html' | prepend: site.baseurl}}">Utils</a></li>
+          <li class="nav-item {% if page.title == "Inline Svg" %} active {% endif %}"><a href="{{ '/inline-svg.html' | prepend: site.baseurl}}">Inline Svg</a></li>
+          <li class="nav-item {% if page.title == "Rem to Pixel" %} active {% endif %}"><a href="{{ '/Rem-to-Pixel.html' | prepend: site.baseurl}}">Rem to Pixel</a></li>
+          <li class="nav-item {% if page.title == "Sass Syntax" %} active {% endif %}"><a href="{{ '/sass-syntax.html' | prepend: site.baseurl}}">Sass Syntax</a></li>
         </ul>
       </aside>
       <main>

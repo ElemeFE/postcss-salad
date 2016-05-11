@@ -3,19 +3,23 @@
 
 $navItem-active-color: #2db7f5 !default;
 $text-link-color: #23de23 !default;
-$normal-font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","\5FAE\8F6F\96C5\9ED1",SimSun,sans-serif !default;
+$normal-font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif !default;
 
 * { box-sizing: border-box; }
 html, body { height: 100%; }
 body {
 	font-family: $normal-font-family;
 	color: #666;
+	font-size: 15px;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 1em 0;
 	color: #404040;
 	font-weight: 700;
+}
+h2 {
+	margin-bottom: 0.75em;
 }
 
 h1 { font-size: 28px; }
@@ -31,6 +35,7 @@ a {
 }
 
 pre {
+	overflow: auto;
 	display: block;
 	padding: 9.5px;
 	margin: 20px;
@@ -55,6 +60,11 @@ blockquote {
 	margin: 1em 0;
 	font-style: italic;
 }
+.docs-list {
+	list-style: circle inside;
+	font-style: initial;
+	font-size: 14px 1.8;
+}
 
 .docs-h2 {
 	border-bottom: 1px solid #ececec;
@@ -71,7 +81,8 @@ blockquote {
     @neat-span-columns 3 12;
 		padding: 30px;
 		height: 100%;
-		background-color: #e9e9e9;
+		background-color: #4d394b;
+		color: #fff;
   }
   & main {
     @neat-span-columns 9 12;
@@ -102,13 +113,15 @@ blockquote {
     display: block;
     text-decoration: none;
     line-height: normal;
-		color: #707070;
+		color: #fff;
 		position: relative;
+		transition: color .3s, background-color .3s;
     
     &:hover {
-			background: none;
-			color: #444;
-			border-color: $navItem-active-color;
+			color: $navItem-active-color;
+			background-color: rgba(0,0,0,0.2);
+    	border-radius: 0 3px 3px 0;
+			text-decoration: none;
     }
   }
 	
@@ -116,18 +129,6 @@ blockquote {
 	& .nav-item.active > a {
 		color: $navItem-active-color;
 		font-weight: 700;
-	}
-	
-	/* 导航展开 */
-	& .nav-item.expanded a {
-		border-color: $navItem-active-color;
-	}
-	
-	/* 一级导航 */
-	& .nav > .nav-item > a:hover {
-		text-decoration: none;
-		background: url(/expand-down.svg) 110px 5px no-repeat;
-		background-size: 24px;
 	}
 	
 	/* 二级导航 */
@@ -150,9 +151,10 @@ blockquote {
 	}
 }
 .fixed-nav {
-	position: fixed 50px 60px * *;
-	border-left: 2px solid #eee;
+	position: fixed 50px 15px * *;
+	border-left: 1px solid #eee;
 	background-color: #fff;
+	width: 150px;
 	
 	& a {
 		color: #666;
@@ -180,6 +182,22 @@ blockquote {
 	min-height: 78px;
 	color: #fff;
   font-size: 18px;
+}
+@svg-load postcss url(../svg/postcss.svg) {
+    
+}
+.icon-postcss {
+	display: inline-block;
+	size: 50px 50px;
+  background: svg-inline(postcss) center center no-repeat;
+	background-size: 100% auto;
+}
+.blockquote-card {
+	border: 1px dashed #dedede;
+	padding: 15px;
+	font-style: normal;
+	font-size: 16px;
+	position: relative;
 }
 footer {
   text-align: center;
