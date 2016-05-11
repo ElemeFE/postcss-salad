@@ -9,8 +9,8 @@
 
 ## Usage
 
-- [Node](#a-Node)
-- [PostCSS](#a-PostCSS)
+- [Node](#Node)
+- [PostCSS](#PostCSS)
 - [Gulp](#Gulp)
 - [webpack](#webpack)
 
@@ -20,7 +20,7 @@ Add [Postcss salad] to your build tool:
 npm install postcss-salad --save-dev
 ```
 
-#### [Node](id:a-Node)
+#### [Node](id:Node)
 
 ```js
 require('postcss-salad').process(YOUR_CSS, { /* options */ });
