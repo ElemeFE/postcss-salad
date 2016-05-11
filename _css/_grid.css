@@ -21,9 +21,6 @@
 }
 .grid-col-6 {
   @neat-span-columns 6;
-  @media (max-width: 800px) {
-    @neat-span-columns 3;
-  }
 }
 .grid-col-6-table {
   @neat-span-columns 6 12 table;

@@ -66,22 +66,11 @@
   display: block;
   float: left;
   margin-right: 2.35765160%;
-  width: 48.82117420%
+  width: 48.82117420%;
 }
 .grid-col-6:last-child{
 	margin-right: 0;
 }
-@media (max-width: 800px){
-	.grid-col-6{
-		display: block;
-		float: left;
-		margin-right: 2.35765160%;
-		width: 23.23176130%;
-	}
-	.grid-col-6:last-child{
-		margin-right: 0;
-	}
-  }
 .grid-col-6-table{
   display: table-cell;
   width: 50.00000000%;

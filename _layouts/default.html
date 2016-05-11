@@ -15,7 +15,7 @@
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <div class="main-wrapper">
+    <div class="main-wrapper" id="main-wrapper">
       <aside class="docs-navbar">
         <div class="aside-top">Salad</div>
         <ul class="nav">
@@ -40,6 +40,13 @@
         </ul>
       </aside>
       <main>
+        <header>
+          <button class="navbar-toggle" ontouchend="docs.toggleNavbar()" id="navbar-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </header>
         <section>
           {{ content }}
         </section>
@@ -50,4 +57,17 @@
       <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
     </footer>-->
   </body>
+  <script>
+    (function(w){
+      w.docs = {
+        toggleNavbar: function() {
+          var navbar = document.getElementById('main-wrapper');
+          var navbarToggle = document.getElementById('navbar-toggle');
+          
+          navbar.classList.toggle('slide-in-left');
+          navbarToggle.classList.toggle('btn-pressed');
+        }
+      };
+    })(window);
+  </script>
 </html>
