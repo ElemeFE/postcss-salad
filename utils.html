@@ -14,11 +14,12 @@ title: Utils
 
 <h1>{{page.title}}</h1>
 <blockquote>
-  <p>沙拉为你提供了CSS中常用代码片断的快捷声明，如清除浮动，文本超长溢出省略号、垂直居中、图片代替文字等等</a></p>
+  <p>提供了 CSS 中常用代码片断的快捷声明，如清除浮动，文本超长溢出省略号、垂直居中、图片代替文字等等</a></p>
+  <a class="link-ul" href="https://github.com/baiyaaaaa/postcss-utils">Plugin documentation</a>
 </blockquote>
 
 <h3 id="ellipsis">Ellipsis</h3>
-<p>文本超长溢出省略号，如果参数 rows 省略，则默认解析为单行溢出，如果传入 rows 参数，则会被解析为多行溢出省略（多行溢出省略只支持）</p>
+<p>文本超长溢出省略号，如果参数 rows 省略，则默认解析为单行溢出，如果传入 rows 参数，则会被解析为多行溢出省略（多行溢出省略的 <a href="http://caniuse.com/#search=-webkit-line-clamp">兼容性</a>）</p>
 {% highlight css %} @utils-ellipsis [rows]; {% endhighlight %}
 <em>input:</em>
 {% highlight css %}
@@ -63,7 +64,7 @@ title: Utils
 .clearfix:before,
 .clearfix:after {
     display: table;
-    content: 
+    content: "";
 }
 .clearfix:after {
     clear: both
@@ -110,7 +111,7 @@ title: Utils
 
 
 <h3 id="disabled">Disabled</h3>
-<p>设定元素在disabled状态时的ui状态</p>
+<p>设定元素在 disabled 状态时的 ui 状态</p>
 {% highlight css %} @utils-disabled [background-color] [border-color] [color]; {% endhighlight %}
 <em>input:</em>
 {% highlight css %}
@@ -146,7 +147,7 @@ title: Utils
 }
 .vam-box:after {
     display: inline-block;
-    content: ;
+    content: "";
     height: 100%;
     vertical-align: middle
 }
