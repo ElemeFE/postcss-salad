@@ -9,19 +9,24 @@
 
 ## Usage
 
+- [Node](#a-Node)
+- [PostCSS](#a-PostCSS)
+- [Gulp](#Gulp)
+- [webpack](#webpack)
+
 Add [Postcss salad] to your build tool:
 
 ```bash
 npm install postcss-salad --save-dev
 ```
 
-#### Node
+#### [Node](id:a-Node)
 
 ```js
 require('postcss-salad').process(YOUR_CSS, { /* options */ });
 ```
 
-#### PostCSS
+#### [PostCSS](id:a-PostCSS)
 
 Add [PostCSS] to your build tool:
 
@@ -37,7 +42,7 @@ postcss([
 ]).process(YOUR_CSS, /* options */);
 ```
 
-#### Gulp
+#### [Gulp](id:Gulp)
 
 Add [Gulp PostCSS]:  to your build tool:
 
@@ -60,10 +65,25 @@ gulp.task('css', function () {
   );
 });
 ```
+#### [webpack](id:webpack)
+
+```js
+module.exports = {
+  module: {
+    loaders: [
+      {
+        test:   /\.css$/,
+        loader: "style-loader!css-loader!postcss-loader"
+      }
+    ]
+  },
+  postcss: function () {
+    return [require('postcss-salad')];
+  }
+}
+```
 
 ## options
-
-**you can change the plugin's behaviour by the options**
 
 沙拉里每一个特性都是依赖于对应的插件的，因此他们都有自己的配置。 你可以通过 features 属性类为每一个插件传入它的配置，假设某个特性传入的值为false，则该特性会被关闭:
 
