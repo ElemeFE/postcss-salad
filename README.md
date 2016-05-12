@@ -1,4 +1,5 @@
-# Postcss-salad
+# Postcss-salad <img align="right" width="96" height="96" src="http://elemefe.github.io/postcss-salad/svg/logo.svg" title="salad logo" style="margin: -60px 30px 0 0;">
+
 [![Build Status][travis-img]][travis]
 [![Version][version]](https://github.com/ElemeFE/postcss-salad/blob/master/CHANGELOG.md)
 
