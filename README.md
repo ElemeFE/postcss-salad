@@ -14,11 +14,11 @@
  
 ```css
 /* short property */
-.banner {
+.box {
   position: fixed 0 0 *;
 }
 /* utils */
-.box {
+.ellipsis2 {
   @utils-ellipsis 3;
 }
 /* shape */
@@ -30,18 +30,18 @@
 **output:**
 
 ```css
+.box {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
 .ellipsis2 {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
-}
-.banner {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
 }
 .circle-a {
   width: 50px;
