@@ -148,16 +148,16 @@ blockquote {
 			padding: * 15px;
 			height: 100%;
 			overflow: hidden;
+			
+			& section {
+				height: 100%;
+				padding-bottom: 55px;
+				overflow: auto;
+			}
 		}
 		
 		& header {
 			padding: 10px 0;
-		}
-		
-		& section {
-			height: 100%;
-			padding-bottom: 55px;
-			overflow: auto;
 		}
   }
 	& .aside-top {
