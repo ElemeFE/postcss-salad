@@ -321,6 +321,7 @@ blockquote a{ font-style:normal; }
 	}
 .main-wrapper aside{ display:block; float:left; margin-right:2.35765160%; width:23.23176130%; padding:30px; height:100%; background-color:#4d394b; color:#fff; }
 .main-wrapper aside:last-child{ margin-right:0; }
+.main-wrapper aside .salad-logo{ display:inline-block; width:82px; margin-left:30px; position:absolute; left:0; top:6px; }
 @media (max-width: 768px){
 
  .main-wrapper aside{ position:relative; margin-left:-80%; margin-right:0; left:0; z-index:10; width:80%; opacity:0; -webkit-transition:opacity .3s; transition:opacity .3s; } }
@@ -332,7 +333,7 @@ blockquote a{ font-style:normal; }
 
  .main-wrapper main section{ height:100%; padding-bottom:55px; overflow:auto; } }
 .main-wrapper main header{ padding:10px 0; }
-.main-wrapper .aside-top{ border-bottom:1px dashed #ccc; padding-bottom:20px; margin-bottom:20px; font-family:'Lobster', cursive; font-size:3em; line-height:1; }
+.main-wrapper .aside-top{ border-bottom:1px dashed #ccc; padding-bottom:20px; padding-left:100px; margin-bottom:20px; font-family:'Lobster', cursive; font-size:3em; line-height:1; }
 .main-wrapper .aside-top span{ font-size:0.75em; font-family:Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif; }
 
 .docs-navbar{

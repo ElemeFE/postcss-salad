@@ -125,6 +125,15 @@ blockquote {
 		background-color: #4d394b;
 		color: #fff;
 		
+		& .salad-logo {
+			display: inline-block;
+			width: 82px;
+			margin-left: 30px;
+			position: absolute;
+			left: 0;
+			top: 6px;
+		}
+		
 		@media (max-width: 768px) {
 			position: relative;
 			margin-left: -80%;
@@ -163,6 +172,7 @@ blockquote {
 	& .aside-top {
 		border-bottom: 1px dashed #ccc;
 		padding-bottom: 20px;
+		padding-left: 100px;
 		margin-bottom: @padding-bottom;
 		font-family: 'Lobster', cursive;
 		font-size: 3em 1;
