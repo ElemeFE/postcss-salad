@@ -3,10 +3,53 @@
 [![Build Status][travis-img]][travis]
 [![Version][version]](https://github.com/ElemeFE/postcss-salad/blob/master/CHANGELOG.md)
 
-> Postcss-salad 是一个能够帮助你更加写出更加简洁、优雅的CSS的样式解决方案。<br>
-> 不仅提供了下一代css语法支持，还提供了基础的sass的语法、属性顺时针简写、rem填充、基础图形绘制、可定制样式的inline-svg以及bem类名自动转化等实用的功能。
+> Postcss-salad 是一个基于 <a href="http://postcss.org/">PostCSS</a> 的 CSS 解决方案，它提供了一系列快捷的 at-rule 和默认语法声明来帮助你快速地搭建项目样式与类库，它只在调用时才输出代码，而不是直接提供 CSS 类库。<br>
+> 沙拉不仅提供了下一代css语法支持，还提供了基础的sass的语法、属性顺时针简写、rem填充、基础图形绘制、可定制样式的inline-svg以及bem类名自动转化等实用的功能。
 
 ### [Documents]
+
+## Demo
+
+**input:**
+ 
+```css
+/* short property */
+.banner {
+  position: fixed 0 0 *;
+}
+/* utils */
+.box {
+  @utils-ellipsis 3;
+}
+/* shape */
+.circle-a {
+  circle: 50px #ff0;
+}
+```
+
+**output:**
+
+```css
+.ellipsis2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.banner {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.circle-a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ff0;
+}
+```
 
 ## Usage
 
