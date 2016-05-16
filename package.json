@@ -1,6 +1,6 @@
 {
   "name": "postcss-salad",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "沙拉是一个能够帮助你更加写出更加简洁、优雅的CSS的样式解决方案。",
   "main": "lib/index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "chalk": "^1.1.1",
     "pixrem": "^3.0.0",
     "postcss": "^5.0.4",
-    "postcss-bem": "^0.4.1",
+    "saladcss-bem": "^0.0.1",
     "postcss-calc": "^5.0.0",
     "postcss-css-reset": "^1.0.2",
     "postcss-initial": "^1.3.1",

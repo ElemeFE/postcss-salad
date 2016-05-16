@@ -1,4 +1,5 @@
 lib/
+_site/
 node_modules/
 src/test/features/*.actual.css
 npm-debug.log

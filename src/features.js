@@ -15,8 +15,8 @@ export default {
   // https://npmjs.com/package/postcss-utils
   utils: (options) => require("postcss-utils")(options),
 
-  // https://npmjs.com/package/postcss-bem
-  bem: (options) => require("postcss-bem")(options),
+  // https://npmjs.com/package/saladcss-bem
+  bem: (options) => require("saladcss-bem")(options),
 
   // https://npmjs.com/package/postcss-calc
   calc: (options) => require("postcss-calc")(options),
