@@ -6,6 +6,9 @@ export default {
    * ******************
    */
   
+  // https://npmjs.com/package/saladcss-partial-import
+  partialImport: (options) => require("saladcss-partial-import")(options),
+  
   // https://npmjs.com/package/precss
   precss: (options) => require("precss")(options),
   

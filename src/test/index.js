@@ -19,16 +19,18 @@ featuresList.forEach(function(name) {
   });
 
   options.features[name] = true;
-
+  
   plugin(options).process(input).then((result) => {
     let actual = result.css;
 
     utils.write(utils.fixturePath(join("features", name + ".actual")), actual);
 
     tape(name, (t) => {
-      t.equal(actual, expected, 'feature ' + name + ' test fail!');
+      t.equal(actual, expected);
       t.end();
     });
+  }).catch((e) => {
+    console.log(e);
   });
 
 });

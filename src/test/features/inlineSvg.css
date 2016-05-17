@@ -1,8 +1,8 @@
-@svg-load nav url(../svgs/nav.svg) {
+/*@svg-load nav url(src/test/svgs/nav.svg) {
   path:nth-child(2){
     fill:#0ff
   };
 }
 h1 {
   background: svg-inline(nav)
-}
+}*/
