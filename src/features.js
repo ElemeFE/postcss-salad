@@ -6,6 +6,9 @@ export default {
    * ******************
    */
   
+  // https://npmjs.com/package/saladcss-bem
+  bem: (options) => require("saladcss-bem")(options),
+
   // https://npmjs.com/package/saladcss-partial-import
   partialImport: (options) => require("saladcss-partial-import")(options),
   
@@ -17,9 +20,6 @@ export default {
   
   // https://npmjs.com/package/postcss-utils
   utils: (options) => require("postcss-utils")(options),
-
-  // https://npmjs.com/package/saladcss-bem
-  bem: (options) => require("saladcss-bem")(options),
 
   // https://npmjs.com/package/postcss-calc
   calc: (options) => require("postcss-calc")(options),
