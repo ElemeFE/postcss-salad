@@ -1,6 +1,6 @@
 {
   "name": "postcss-salad",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "沙拉是一个能够帮助你更加写出更加简洁、优雅的CSS的样式解决方案。",
   "main": "lib/index.js",
   "scripts": {
