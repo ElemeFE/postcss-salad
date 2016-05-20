@@ -97,6 +97,7 @@ npm install gulp-postcss --save-dev
 Enable [Postcss salad] within your Gulpfile:
 
 ```js
+var gulp = require('gulp');
 var postcss = require('gulp-postcss');
 
 gulp.task('css', function () {
