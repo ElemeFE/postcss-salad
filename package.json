@@ -21,6 +21,7 @@
     "postcss-inline-svg": "^1.4.0",
     "postcss-neat": "^2.5.2",
     "postcss-pseudo-class-any-link": "^1.0.0",
+    "postcss-sass-color-functions": "^1.1.0",
     "postcss-scss": "^0.1.7",
     "postcss-shape": "^0.0.1",
     "postcss-short": "^1.4.0",

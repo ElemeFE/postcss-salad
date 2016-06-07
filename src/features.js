@@ -9,6 +9,9 @@ export default {
   // https://npmjs.com/package/saladcss-bem
   bem: (options) => require("saladcss-bem")(options),
 
+  // postcss-sass-color-functions
+  sassColor: (options) => require("postcss-sass-color-functions")(options),
+
   // https://npmjs.com/package/saladcss-partial-import
   partialImport: (options) => require("saladcss-partial-import")(options),
   
