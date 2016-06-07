@@ -2,6 +2,7 @@ import tape from "tape";
 import {join} from "path";
 import plugin, {features} from "..";
 import utils from "./utils";
+import postcss from "postcss";
 
 
 var featuresList = Object.keys(features);
