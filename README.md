@@ -136,7 +136,7 @@ module.exports = {
 
 ```js
 var options = {
-  browser: ['ie > 8', 'last 2 version'],
+  browsers: ['ie > 8', 'last 2 version'],
   features: {
     "bem": false, //pass boolean false can disable the plugin
     "inlineSvg": {
