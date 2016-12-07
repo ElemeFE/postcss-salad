@@ -6,18 +6,18 @@ export default {
    * ******************
    */
   
+  // https://npmjs.com/package/saladcss-partial-import
+  partialImport: (options) => require("saladcss-partial-import")(options),
+
   // https://npmjs.com/package/saladcss-bem
   bem: (options) => require("saladcss-bem")(options),
+
+  // https://npmjs.com/package/precss
+  precss: (options) => require("precss")(options),
 
   // postcss-sass-color-functions
   sassColor: (options) => require("postcss-sass-color-functions")(options),
 
-  // https://npmjs.com/package/saladcss-partial-import
-  partialImport: (options) => require("saladcss-partial-import")(options),
-  
-  // https://npmjs.com/package/precss
-  precss: (options) => require("precss")(options),
-  
   // https://npmjs.com/package/postcss-css-reset
   reset: (options) => require("postcss-css-reset")(options),
   
