@@ -1,0 +1,106 @@
+---
+layout: default
+title: Short Property
+---
+
+<ul class="fixed-nav">
+  <li class="nav-item"><a href="#Size">Size</a></li>
+  <li class="nav-item"><a href="#Position">Position</a></li>
+  <li class="nav-item"><a href="#Color">Color</a></li>
+  <li class="nav-item"><a href="#Font-Size">Font-Size</a></li>
+  <li class="nav-item"><a href="#Border">Border</a></li>
+</ul>
+
+<h1>Short Property</h1>
+<blockquote>
+  <p>沙拉为你提供了常用属性的缩写声明规则</a></p>
+  <a class="link-ul" href="https://github.com/jonathantneal/postcss-short">Plugin documentation</a>
+</blockquote>
+
+<h3 id="Size">Size</h3>
+<p>我们提供了 size 属性来将 width 和 height 两个属性的值写在一起。</p>
+
+<em>input:</em>
+{% highlight css %}
+.icon {
+    size: 48px;
+}
+{% endhighlight %}
+
+<em>output:</em>
+{% highlight css %}
+.icon {
+    width: 48px;
+    height: 48px;
+}
+{% endhighlight %}
+
+<h3 id="Position">Position</h3>
+<p>我们可以在 position 的属性值之后以顺时针的顺序来接着编写 top、right、bottom、left 这几个值。其中如果不需要声明的属性我们可以用 “*” 号来跳过。</p>
+<em>input:</em>
+{% highlight css %}
+.banner {
+    position: fixed 0 0 *;
+}
+{% endhighlight %}
+
+<em>output:</em>
+{% highlight css %}
+.banner {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+{% endhighlight %}
+
+<h3 id="Color">Color</h3>
+<p>color 属性现在可以接受两个值，这样我们可以同时将 color 和 background-color 的值写在一起。</p>
+<em>input:</em>
+{% highlight css %}
+.canvas {
+    color: #abccfc #212231;
+}
+{% endhighlight %}
+
+<em>output:</em>
+{% highlight css %}
+.canvas {
+    color: #abccfc;
+    background-color: #212231;
+}
+{% endhighlight %}
+
+<h3 id="Font-Size">Font-Size</h3>
+<p>font-size 属性现在可以接受两个值，这样我们可以同时将 font-size 和 line-height 的值写在一起。</p>
+<em>input:</em>
+{% highlight css %}
+.heading {
+    font-size: 1.25em 2;
+}
+{% endhighlight %}
+
+<em>output:</em>
+{% highlight css %}
+.heading {
+    font-size: 1.25em;
+    line-height: 2;
+}
+{% endhighlight %}
+
+<h3 id="Border">Border</h3>
+<p>border 属性现在允许我们以顺时针的顺序来同时编写 top、right、bottom、left 这几个 border 的值。</p>
+<em>input:</em>
+{% highlight css %}
+.container {
+    border: 1px 2px #343434;
+}
+{% endhighlight %}
+
+<em>output:</em>
+{% highlight css %}
+.container {
+    border-width: 1px 2px;
+    border-color: #343434;
+}
+{% endhighlight %}

@@ -1,0 +1,155 @@
+---
+layout: default
+title: Lasted CSS Syntax
+---
+
+<ul class="fixed-nav">
+  <li class="nav-item"><a href="#variable">变量定义</a></li>
+  <li class="nav-item"><a href="#selector">选择器定义</a></li>
+  <li class="nav-item"><a href="#media">媒体查询定义</a></li>
+  <li class="nav-item"><a href="#nest">选择器嵌套</a></li>
+  <li class="nav-item"><a href="#selector-match">选择器匹配</a></li>
+</ul>
+
+<h1>Lasted CSS Syntax</h1>
+<blockquote>
+  <p>提供了 <a href="https://drafts.csswg.org/selectors-4/">下一代的 CSS 语法规则</a></p>
+  <p>包括 <a href="https://github.com/postcss/postcss-custom-properties">自定义的变量</a>、<a href="https://github.com/postcss/postcss-custom-media">自定义媒体查询</a>、<a href="https://github.com/postcss/postcss-custom-selectors">自定义选择器</a> 以及 <a href="https://github.com/jonathantneal/postcss-nesting">选择器嵌套</a> 等等</p>
+</blockquote>
+
+<h3 id="variable">变量</h3>
+
+{% highlight css %}
+:root {
+  --color: red;
+}
+
+div {
+  color: var(--color);
+}
+{% endhighlight %}
+
+<h3 id="selector">选择器</h3>
+<em>input:</em>
+{% highlight css %}
+@custom-selector :--heading h1, h3, h3, h4, h5, h6;
+
+article :--heading + p {
+  margin-top: 0;
+}
+{% endhighlight %}
+
+<em>output:</em>
+{% highlight css %}
+article h1 + p,
+article h3 + p,
+article h3 + p,
+article h4 + p,
+article h5 + p,
+article h6 + p {
+  margin-top: 0;
+}
+{% endhighlight %}
+
+<h3 id="media">媒体查询</h3>
+<em>input:</em>
+{% highlight css %}
+@custom-media --small-viewport (max-width: 30em);
+
+@media (--small-viewport) {
+  /* styles for small viewport */
+}
+{% endhighlight %}
+
+<em>output:</em>
+{% highlight css %}
+@media (max-width: 30em) {
+  /* styles for small viewport */
+}
+{% endhighlight %}
+
+<h3 id="nest">嵌套</h3>
+<em>input:</em>
+{% highlight css %}
+a, b {
+    color: red;
+
+    & c, & d {
+        color: white;
+    }
+
+    & & {
+        color: blue;
+    }
+
+    &:hover {
+        color: black;
+    }
+
+    @media (min-width: 30em) {
+        color: yellow;
+
+        @media (min-device-pixel-ratio: 1.5) {
+            color: green;
+        }
+    }
+}
+{% endhighlight %}
+
+<em>output:</em>
+{% highlight css %}
+a, b {
+    color: red;
+}
+
+a c, a d, b c, b d {
+    color: white;
+}
+
+a a, b b {
+    color: blue;
+}
+
+a:hover, b:hover {
+    color: black;
+}
+
+@media (min-width: 30em) {
+    a, b {
+        color: yellow;
+    }
+}
+
+@media (min-width: 30em) and (min-device-pixel-ratio: 1.5) {
+    color: green;
+}
+{% endhighlight %}
+
+<h3 id="media">选择器匹配</h3>
+<em>input:</em>
+{% highlight css %}
+p:matches(:first-child, .special) {
+  color: red;
+}
+{% endhighlight %}
+
+<em>output:</em>
+{% highlight css %}
+p:first-child, p.special {
+  color: red;
+}
+{% endhighlight %}
+
+<em>input:</em>
+{% highlight css %}
+p:not(:first-child, .special) {
+  color: red;
+}
+{% endhighlight %}
+
+<em>output:</em>
+{% highlight css %}
+p:not(:first-child), p:not(.special) {
+  color: red;
+}
+{% endhighlight %}

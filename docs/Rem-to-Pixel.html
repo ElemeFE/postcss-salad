@@ -1,0 +1,50 @@
+---
+layout: default
+title: Rem to Pixel
+---
+
+<ul class="fixed-nav">
+  <li class="nav-item"><a href="#Size">Size</a></li>
+  <li class="nav-item"><a href="#Position">Position</a></li>
+  <li class="nav-item"><a href="#Color">Color</a></li>
+  <li class="nav-item"><a href="#Font-Size">Font-Size</a></li>
+  <li class="nav-item"><a href="#Border">Border</a></li>
+</ul>
+
+<h1>{{page.title}}</h1>
+<blockquote>
+  <p>基于 <a href="http://caniuse.com/rem">browser data</a> 来为不支持 rem 的浏览器或者场景下，提供 rem 的转化成 px 的功能。</a></p>
+  <a href="https://github.com/robwierzbowski/node-pixrem" class="link-ul">Plugin documentation</a>
+</blockquote>
+<h3>Example</h3>
+
+<em>input:</em>
+{% highlight css %}
+.sky {
+  margin: 2.5rem 2px 3em 100%;
+  color: blue;
+}
+
+@media screen and (min-width: 20rem) {
+  .leaf {
+    margin-bottom: 1.333rem;
+    font-size: 1.5rem;
+  }
+}
+{% endhighlight %}
+
+<em>output:</em>
+{% highlight css %}
+.sky {
+  margin: 80px 2px 3em 100%;
+  margin: 2.5rem 2px 3em 100%;
+  color: blue;
+}
+
+@media screen and (min-width: 20rem) {
+  .leaf {
+    margin-bottom: 1.333rem;
+    font-size: 1.5rem;
+  }
+}
+{% endhighlight %}
