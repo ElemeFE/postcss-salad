@@ -1,17 +1,28 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
+  <div id="app" class="main-wrapper">
+    <sidenav></sidenav>
+    <main>
+      <header>
+        <button class="navbar-toggle" ontouchend="docs.toggleNavbar()" id="navbar-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </header>
+      <section>
+        <router-view></router-view>
+      </section>
+    </main>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello';
+import Sidenav from './components/Sidenav';
 
 export default {
   name: 'app',
   components: {
-    Hello,
+    Sidenav,
   },
 };
 </script>
