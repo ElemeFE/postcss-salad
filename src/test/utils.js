@@ -31,6 +31,10 @@ module.exports = {
     return fs.readFileSync(this.fixturePath(name, ext), "utf8")
   },
 
+  exists(name, ext) {
+    return fs.existsSync(this.fixturePath(name, ext))
+  },
+
   /**
    * read a fixture
    * @param {String} name

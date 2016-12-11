@@ -6,8 +6,11 @@ export default {
    * ******************
    */
   
-  // https://npmjs.com/package/saladcss-partial-import
-  partialImport: (options) => require("saladcss-partial-import")(options),
+  // https://npmjs.com/package/postcss-partial-import
+  partialImport: (options) => require("postcss-partial-import")(options),
+
+  // https://npmjs.com/package/postcss-url
+  url: (options) => require("postcss-url")(options),
 
   // https://npmjs.com/package/saladcss-bem
   bem: (options) => require("saladcss-bem")(options),

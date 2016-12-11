@@ -10,6 +10,7 @@ var featuresList = Object.keys(features);
 // disable all features
 
 featuresList.forEach(function(name) {
+  if (!utils.exists(join("features", name))) return;
   const input = utils.readFixture(join("features", name));
   const expected = utils.readFixture(join("features", name + ".expected"));
 
