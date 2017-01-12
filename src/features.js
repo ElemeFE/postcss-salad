@@ -17,6 +17,9 @@ export default {
 
   // https://npmjs.com/package/precss
   precss: (options) => require("precss")(options),
+  
+  // postcss-color-function
+  color: (options) => require("postcss-color-function")(options),
 
   // postcss-sass-color-functions
   sassColor: (options) => require("postcss-sass-color-functions")(options),
