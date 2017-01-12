@@ -1,21 +1,16 @@
----
-layout: default
-title: Reset and Normalize
----
-<ul class="fixed-nav">
-  <li class="nav-item"><a href="#reset-global">reset-global</a></li>
-  <li class="nav-item"><a href="#reset-nested">reset-nested</a></li>
-</ul>
-<h1>Reset and Normalize</h1>
-<blockquote>
-  <p>提供了 PC 和移动端下的全局样式的重置，以及单个元素的常用属性重置功能。</p>
-  <p>全局的重置样式是在 <a href="https://github.com/necolas/normalize.css/">normalize.css</a> 的基础上进行了一层包装而成的。</p>
-  <a class="link-ul" href="https://github.com/baiyaaaaa/postcss-css-reset">Plugin documentation</a>
-</blockquote>
-<h2 class="docs-h2">语法</h2>
-<h3 id="reset-global">@reset-global: [pc|mobile];</h3>
-<p>进行全局的样式重置</p>
-{% highlight css %}
+@[toc]
+
+# Reset and Normalize
+
+> 提供了 PC 和移动端下的全局样式的重置，以及单个元素的常用属性重置功能。</p>
+> 全局的重置样式是在 <a href="https://github.com/necolas/normalize.css/">normalize.css</a> 的基础上进行了一层包装而成的。</p><a class="link-ul" href="https://github.com/baiyaaaaa/postcss-css-reset">Plugin documentation</a>
+
+## 语法
+
+### @reset-global: [pc|mobile];
+进行全局的样式重置
+
+```css
 /* before */
 @reset-global pc;
 
@@ -238,11 +233,13 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 100%;
     font-weight: normal
 }
-{% endhighlight %}
+```
 
-<h3 id="reset-nested">@reset-nested: [tabel|tabel-cell|list|font|boxModel]</h3>
-<p>在选择器内进行常用元素的样式重置</p>
-{% highlight css %}
+### @reset-nested: [tabel|tabel-cell|list|font|boxModel]
+
+在选择器内进行常用元素的样式重置
+
+```css
 /* before */
 .table {
   @reset-nested tabel;
@@ -292,4 +289,4 @@ ul, ol {
   width: auto;
   height: auto;
 }
-{% endhighlight %}
+```

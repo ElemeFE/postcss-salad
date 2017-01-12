@@ -1,41 +1,37 @@
 <template>
   <aside class="docs-navbar">
-    <div class="aside-top">Salad<img class="salad-logo" alt=""></div>
+    <div class="aside-top">Salad<img class="salad-logo" src="~assets/logo.svg"></div>
     <ul class="nav">
-      <li class="nav-item">
-        <router-link to="/index">Overview</router-link>
-      </li>
-      <li class="nav-item">
-        <router-link to="/reset">Reset and Normalize</router-link>
-        <!--<ul class="subnav">
-          <li class="nav-item active"><a href="/reset.html#reset-global">reset-global</a></li>
-          <li class="nav-item"><a href="/reset.html#reset-nested">reset-nested</a></li>
-        </ul>-->
-      </li>
-      <li class="nav-item">
-        <router-link to="/lasted-syntax">Lasted CSS Syntax</router-link>
-      </li>
-      <li class="nav-item">
-        <router-link to="/short-property">Short Property</router-link>
-      </li>
-      <li class="nav-item">
-        <router-link to="/grid">Grid</router-link>
-      </li>
-      <li class="nav-item">
-        <router-link to="/basic-shape">Basic Shape</router-link>
-      </li>
-      <li class="nav-item">
-        <router-link to="/utils">Utils</router-link>
-      </li>
-      <li class="nav-item">
-        <router-link to="/inline-svg">Inline Svg</router-link>
-      </li>
-      <li class="nav-item">
-        <router-link to="/Rem-to-Pixel">Rem to Pixel</router-link>
-      </li>
-      <li class="nav-item">
-        <router-link to="/sass-syntax">Sass Syntax</router-link>
-      </li>
+      <router-link tag="li" to="/postcss-salad/index" class="nav-item">
+        <a>Overview</a>
+      </router-link>
+      <router-link tag="li" class="nav-item" to="/postcss-salad/reset">
+        <a> Reset and Normalize</a>
+      </router-link>
+      <router-link tag="li" class="nav-item" to="/postcss-salad/lasted-syntax">
+        <a>Lasted CSS Syntax</a>
+      </router-link>
+      <router-link tag="li" class="nav-item" to="/postcss-salad/short-property">
+        <a>Short Property</a>
+      </router-link>
+      <router-link tag="li" class="nav-item" to="/postcss-salad/grid">
+        <a>Grid</a>
+      </router-link>
+      <router-link tag="li" class="nav-item" to="/postcss-salad/basic-shape">
+        <a>Basic Shape</a>
+      </router-link>
+      <router-link tag="li" class="nav-item" to="/postcss-salad/utils">
+        <a> Utils</a>
+      </router-link>
+      <router-link tag="li" class="nav-item" to="/postcss-salad/inline-svg">
+        <a>Inline Svg</a>
+      </router-link>
+      <router-link tag="li" class="nav-item" to="/postcss-salad/Rem-to-Pixel">
+        <a>Rem to Pixel</a>
+      </router-link>
+      <router-link tag="li" class="nav-item" to="/postcss-salad/sass-syntax">
+        <a>Sass Syntax</a>
+      </router-link>
     </ul>
   </aside>
 </template>
