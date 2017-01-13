@@ -1,11 +1,11 @@
 .table {
-  @reset-nested tabel;
+  @reset-nested table;
   color: #fff;
 }
 
 td, th {
   background-color: #fff;
-  @reset-nested tabel-cell;
+  @reset-nested table-cell;
 }
 
 ul, ol {

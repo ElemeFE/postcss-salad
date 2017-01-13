@@ -1,31 +1,26 @@
-import tape from "tape";
-import {join} from "path";
-import plugin, {features} from "..";
-import utils from "./utils";
 import postcss from "postcss";
+import tape from "tape";
+import plugin from "..";
+import features from '../features';
+import utils from "./utils";
 
-
-var featuresList = Object.keys(features);
+const featuresList = Object.keys(features);
+const options = {
+  features: {}
+};
 
 // disable all features
-
 featuresList.forEach(function(name) {
-  if (!utils.exists(join("features", name))) return;
-  const input = utils.readFixture(join("features", name));
-  const expected = utils.readFixture(join("features", name + ".expected"));
+  if (!utils.exists(name)) return;
+  const input = utils.readFixture(name);
+  const expected = utils.readFixture(`${name}.expected`);
 
-  let options = { features: {} };
+  options.features.autoprefixer = name === 'autoprefixer';
 
-  featuresList.forEach(function(name) {
-    options.features[name] = false;
-  });
-
-  options.features[name] = true;
-  
   plugin(options).process(input).then((result) => {
     let actual = result.css;
 
-    utils.write(utils.fixturePath(join("features", name + ".actual")), actual);
+    utils.write(utils.fixturePath(`${name}.actual`), actual);
 
     tape(name, (t) => {
       t.equal(actual, expected);
@@ -34,7 +29,6 @@ featuresList.forEach(function(name) {
   }).catch((e) => {
     console.log(e);
   });
-
 });
 
 
