@@ -14,7 +14,7 @@
 }
 .clearfix:before, .clearfix:after {
   display: table;
-  content: ;
+  content: "";
 }
 .clearfix:after {
   clear: both;
@@ -40,7 +40,7 @@
 }
 .vam-box:after {
   display: inline-block;
-  content: ;
+  content: "";
   height: 100%;
   vertical-align: middle;
 }
