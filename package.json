@@ -1,6 +1,6 @@
 {
   "name": "postcss-salad",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "沙拉是一个能够帮助你更加写出更加简洁、优雅的CSS的样式解决方案。",
   "main": "lib/index.js",
   "scripts": {
@@ -33,9 +33,7 @@
     "postcss-url": "^5.1.2",
     "postcss-utils": "^1.0.1",
     "precss": "^1.4.0",
-    "saladcss-bem": "^0.0.1",
-    "vue": "^2.1.4",
-    "vue-router": "^2.1.1"
+    "saladcss-bem": "^0.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",
@@ -82,7 +80,9 @@
     "vue-template-compiler": "^2.1.4",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.16.2",
-    "webpack-merge": "^1.1.1"
+    "webpack-merge": "^1.1.1",
+    "vue": "^2.1.4",
+    "vue-router": "^2.1.1"
   },
   "babel": {
     "presets": [
