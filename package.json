@@ -1,6 +1,6 @@
 {
   "name": "postcss-salad",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "沙拉是一个能够帮助你更加写出更加简洁、优雅的CSS的样式解决方案。",
   "main": "lib/index.js",
   "scripts": {
@@ -33,7 +33,7 @@
     "postcss-url": "^6.1.0",
     "postcss-utils": "^1.0.1",
     "precss": "^1.4.0",
-    "saladcss-bem": "^0.0.1"
+    "saladcss-bem": "^0.0.2"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",
