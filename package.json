@@ -91,5 +91,10 @@
     ]
   },
   "author": "haiping.zeng@ele.me",
+  "homepage": "https://github.com/ElemeFE/postcss-salad",
+  "repository": "ElemeFE/postcss-salad",
+  "bugs": {
+    "url": "https://github.com/ElemeFE/postcss-salad/issues"
+  },
   "license": "MIT"
 }
